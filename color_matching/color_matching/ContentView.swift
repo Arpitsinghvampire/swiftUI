@@ -47,7 +47,12 @@ struct ContentView: View {
                         .frame(width:200,height:300)
                     
                     
+                    
+                    
+                    
                 }
+                .frame(width:500,height:400)
+                .background(Color.white)
                 
                 HStack
                 {
@@ -98,7 +103,7 @@ struct ContentView: View {
                     Text("YOUR SCORE IS \(score) %")
                 }
                 
-                
+               
                 
                 
             }
@@ -110,9 +115,9 @@ struct ContentView: View {
             
 
         }
-       
+        .environment(\.colorScheme, .dark)
     }
-    
+        
 }
 
 #Preview {
