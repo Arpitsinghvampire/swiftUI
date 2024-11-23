@@ -8,11 +8,33 @@
 import SwiftUI
 
 struct SecondView: View {
-    @Binding var firstname : String
+    var firstname : String = ""
     
     var body: some View {
         
-        Text("Hello \(firstname)")
+        
+        
+        TabView
+        {
+           Setting_view()
+                .tabItem{
+                    Label("Settings",systemImage:"gearshape.fill")
+                }
+                .foregroundColor(.red)
+                .background(Color.red)
+            
+            
+           Account_view()
+                .tabItem{
+                    Label("Account",systemImage:"person.crop.circle.fill")
+                }
+            
+            .badge(1)
+        }
     }
+}
+#Preview
+{
+    SecondView()
 }
 

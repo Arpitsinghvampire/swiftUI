@@ -15,3 +15,6 @@ struct basic_login_appApp: App {
         }
     }
 }
+#Preview{
+    ContentView()
+}
